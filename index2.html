@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        // Escribe un script que pregunte al usuario por su nombre y apellidos y le diga el número de letras que tiene su nombre completo.
+        let fullName = prompt('Escribe tu nombre y apellidos');
+        const fullNameTrimed = fullName.trim();
+        const fullNameSplited = fullNameTrimed.split(' ');
+        console.log(fullNameSplited);
+
+        let nameConcat = '';
+        for(let i=0; i< fullNameSplited.length; i++){
+            nameConcat = nameConcat + fullNameSplited[i];
+        }
+
+        console.log(nameConcat);
+        console.log('El numero de letras que tiene el nombre completo es', nameConcat.length);
         
     </script>
 </body>
+
 </html>
