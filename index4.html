@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Con código JS, haz un script que pregunte al usuario por un número y, en base a ese número, genere la media pirámide invertida de la siguiente forma:
+
+        // …
+        // 7777777
+        // 666666
+        // 55555
+        // 4444
+        // 333
+        // 22
+        // 1
+        const numero = prompt('Escribe un número');
+
+        for(let i=numero; i>=0; i--) {
+            let texto = '';
+            for(let j=0; j<i; j++){
+                texto = texto.concat(i);
+            }
+            console.log(texto);
+        }
+    </script>
+</body>
+
+</html>
