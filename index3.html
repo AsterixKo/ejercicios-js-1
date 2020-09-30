@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        //         Con código JS, haz un script que genere la media pirámide del 1 al 30 de la siguiente forma:
+        // 1
+        // 22
+        // 333
+        // 4444
+        // 55555
+        // 666666
+        // 7777777
+        // ...
+        for(let i=0; i<=30; i++) {
+            let texto = '';
+            for(let j=0; j<i; j++){
+                texto = texto.concat(i);
+            }
+            console.log(texto);
+        }
     </script>
 </body>
+
 </html>
