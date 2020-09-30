@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Escribe un código que pida al usuario un texto (máximo 50 caracteres) y le diga al usuario cuántas vocales tiene el texto que ha introducido.
+        const text = prompt('Escribe un texto para contar las vocales');
+
+        if (text.length > 50) {
+            alert('El texto tiene demasiados carácters');
+        }
+
+        let numeroVocales = 0;
+        for (let i = 0; i < text.length; i++) {
+            let word = text[i];
+
+            switch (word) {
+                case 'a':
+                    numeroVocales++;
+                    break;
+                case 'e':
+                    numeroVocales++;
+                    break;
+                case 'i':
+                    numeroVocales++;
+                    break;
+                case 'o':
+                    numeroVocales++;
+                    break;
+                case 'u':
+                    numeroVocales++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        console.log('El número de vocales es', numeroVocales);
+    </script>
+</body>
+
+</html>
