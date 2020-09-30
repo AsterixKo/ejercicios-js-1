@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Escribe un código que pregunte al usuario por un texto y
+        // limpie ese texto de comillas, tanto simples
+        // como dobles (“” - ‘’). Debe imprimir en consola el
+        // texto limpio. Comprueba que funciona pasándole un texto
+        // con comillas simples y dobles.
+        const text = prompt('Escribe un texto con comillas simples y dobles');
+        
+        const textA = text.replace(/'/g, '');
+        const textB = textA.replace(/"/g, '');
+        console.log(textB);
+    </script>
+</body>
+</html>
