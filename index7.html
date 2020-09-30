@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Con código JS, haz un script que pregunte al
+        // usuario por un número (controla que el máximo sea 50
+        // y devuelve un error si es superior) y genere la media
+        // pirámide de la siguiente forma:
+
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
+        // 123456
+        // …
+        const number = prompt('Escribe un número menor de 50');
+
+        if(number >50){
+            alert('Error: el numero no puede ser mayor de 50');
+        }
+
+        for(let i=0; i<number; i++){
+
+            let text = '';
+            for(let j = 1; j<=i; j++){
+                text = text.concat(j);
+            }
+            console.log(text);
+        }
+    </script>
+</body>
+
+</html>
