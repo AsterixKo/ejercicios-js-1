@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Escribe un script que pregunte al usuario por 4 nombres de
+        // persona y sus respectivas 4 edades. En la consola debe
+        // indicar quién es la persona más mayor del grupo y la persona más joven.
+
+
+        let persons = [];
+        let ages = [];
+        for (let i = 0; i < 4; i++) {
+            persons.push(prompt('Introduce el nombre de la persona'));
+            ages.push(prompt('Introduce su edad'));
+        }
+
+        let youngNumber = Number.MAX_VALUE;
+        let oldNumber = Number.MIN_VALUE;
+        let youngIndex = 0;
+        let oldIndex = 0;
+
+        for (let i = 0; i < ages.length; i = i + 1) {
+            if (ages[i] <= youngNumber) {
+                youngNumber = ages[i];
+                youngIndex = i;
+            }
+            if (ages[i] >= oldNumber) {
+                oldNumber = ages[i];
+                oldIndex = i;
+            }
+        }
+        console.log(persons);
+        console.log(ages);
+        console.log('La persona mas joven es', persons[youngIndex]);
+        console.log('La persona mas mayor es', persons[oldIndex]);
+    </script>
+</body>
+
+</html>
