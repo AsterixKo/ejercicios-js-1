@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Escribe un código que escriba en consola los números del 1 al 500 e indica
+        //         qué números son múltiplos de 4 y de 9. Cada 5 líneas debe mostrar una
+        //         línea horizontal de separación hecha con guiones “---------------------”. Ej:
+
+        // 1
+        // 2
+        // 3
+        // 4 - Es múltiplo de 4
+        // 5
+        // --------------------
+        // 6
+        // 7
+        // 8 - Es múltiplo de 4
+        // 9 - Es múltiplo de 9
+        // 10
+        // …
+
+        for (let i = 0; i < 500; i++) {
+            if (i % 4 === 0) {
+                console.log(String(i), '- Es múltiplo de 4');
+            } else if (i % 9 === 0) {
+                console.log(String(i), '- Es múltiplo de 9');
+            } else {
+                console.log(String(i));
+            }
+        }
+    </script>
+</body>
+
+</html>
