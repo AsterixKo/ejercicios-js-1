@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado virtual</title>
+</head>
+
+<body>
+    <!-- Escribe un script que funcione a modo de “dado virtual” para jugar a
+    juegos de mesa. Pregunta al usuario cuántas caras tiene el dado que
+    quiere tirar y, en base a esto, genera un resultado aleatorio para la
+    tirada (revisa la librería Math de JavaScript y, concretamente, el
+    método .random() ). -->
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        const caras = prompt('Cuantas caras tiene el dado');
+        const carasNumber = parseInt(caras);
+        console.log('carasNumber:', carasNumber);
+        const result = getRandomInt(1, carasNumber + 1);
+        console.log('result', result);
+        alert('El resultado es: '+ result);
+
+        
+    </script>
+</body>
+
+</html>
