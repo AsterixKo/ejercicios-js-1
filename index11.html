@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euromillones</title>
+</head>
+
+<body>
+
+    <!-- Escribe un script que genere apuestas aleatorias al EuroMillones
+    (revisa la web de Loterías y Apuestas para ver en qué consiste
+    cada apuesta). En consola debe mostrar la apuesta aleatoria
+    generada, con los números ordenados:
+
+    03
+    20
+    31
+    37
+    40
+    +
+    01
+    05 -->
+
+    <script>
+        const LOTTERY_TICKET_NUMBERS = 50;
+        const LOTTERY_TICKET_STARS = 11;
+        const SELECTION_NUMBERS_LIMIT = 5;
+        const SELECTION_STARS_LIMIT = 2;
+
+        const number1 = getRandomInt(1, LOTTERY_TICKET_NUMBERS + 1);
+        const number2 = getRandomInt(1, LOTTERY_TICKET_NUMBERS + 1);
+        const number3 = getRandomInt(1, LOTTERY_TICKET_NUMBERS + 1);
+        const number4 = getRandomInt(1, LOTTERY_TICKET_NUMBERS + 1);
+        const number5 = getRandomInt(1, LOTTERY_TICKET_NUMBERS + 1);
+
+        const star1 = getRandomInt(1, LOTTERY_TICKET_STARS + 1);
+        const star2 = getRandomInt(1, LOTTERY_TICKET_STARS + 1);
+
+        console.log(number1);
+        console.log(number2);
+        console.log(number3);
+        console.log(number4);
+        console.log(number5);
+        console.log('+');
+        console.log(star1);
+        console.log(star2);
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script>
+</body>
+
+</html>
